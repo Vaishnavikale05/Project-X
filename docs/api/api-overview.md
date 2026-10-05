@@ -1,0 +1,5 @@
+# API overview
+
+REST API prefix: `/api/v1`. JSON request/response, UTF-8, UTC ISO-8601 timestamps, UUID identifiers. Media upload is a bounded multipart request or staged source reference; video never appears in JSON or PostgreSQL. Collections are paginated; filtering/sorting are allow-listed. Use HTTP semantics, idempotency keys for ingestion/job creation, and an error envelope `{ "error": { "code", "message", "details", "request_id" } }`. Never expose stack traces, local paths, credentials, or raw model diagnostics.
+
+Phase 4 adds centralized authentication under `/api/v1/auth`; Phase 5 adds institution context and classroom/camera metadata APIs. Protected DRF routes use JWT bearer authentication and require authentication by default; the health endpoint and auth bootstrap endpoints explicitly declare their public access. OpenAPI is exposed at `/api/v1/schema/` and `/api/v1/docs/`. Institution/classroom/camera routes are institution-scoped; broader business APIs remain unimplemented. The endpoint catalog and representative contracts live in `api-contracts.md`.

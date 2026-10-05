@@ -1,0 +1,49 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+*.egg-info/
+/backend/var/
+
+# JavaScript
+node_modules/
+dist/
+build/
+.vite/
+/frontend/coverage/
+
+# Local databases, queues, runtime logs
+*.sqlite3
+*.log
+*.pid
+
+# Classroom media and derived artifacts: never commit video or identifiable frames
+media/
+videos/
+datasets/
+artifacts/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Editors / operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
