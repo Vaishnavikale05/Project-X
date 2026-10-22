@@ -60,6 +60,7 @@ See [Development environment](docs/development-environment.md) for setup, migrat
 - [ERD and class diagram](docs/database/entity-relationships.md)
 - [API contracts](docs/api/api-contracts.md)
 - [AI/CV architecture](docs/ai/ai-cv-architecture.md)
+- [Proposed system, mathematical model, and diagrams](docs/diagrams.md)
 - [Developer environment setup](docs/development-environment.md)
 - [Development roadmap](DEVELOPMENT_ROADMAP.md)
 - [Project status](PROJECT_STATUS.md)
